@@ -57,7 +57,6 @@ body {
 
 /* Lien Instagram légèrement décalé à droite */
 .instagram-link {
-
     padding-left: 5px; /* Ajout d'un peu d'espace à gauche si nécessaire */
     margin-top: 5px; /* Pour aligner verticalement avec le texte */
 }
@@ -69,7 +68,7 @@ body {
     transition-duration: 0.3s;
 }
 
-.instagram-link p:hover {
+.instagram-link a:hover {
     color: #555;
 }
 
@@ -144,20 +143,24 @@ body {
     margin-top: 0; /* Supprime l'espacement supérieur pour le paragraphe */
 }
 
-
 .image-item.centered {
-    display: flex;
+    grid-column: span 12; /* Pour s'assurer qu'elle prend toute la largeur */
+    display: flex; /* Utilisation de flex pour centrer le contenu */
     justify-content: center; /* Centre le contenu */
 }
 
-
+.image-item.centered img {
+    max-width: 100%; /* S'assurer que l'image ne dépasse pas son conteneur */
+    height: auto; /* Pour garder le ratio de l'image */
+}
 
 /* Footer */
 .footer {
     grid-column: span 12;
     background-color: #000000;
-    
-  
+    color: #333;
+    padding: 20px;
+    text-align: left;
 }
 
 /* Responsive Breakpoint for 768px */
@@ -182,5 +185,7 @@ body {
         font-size: 0.9em;
     }
 
-    
+    .instagram-link {
+        margin-left: 0; /* Retire le décalage pour les petits écrans */
+    }
 }
