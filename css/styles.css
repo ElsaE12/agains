@@ -124,7 +124,7 @@ body {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligner tous les éléments à gauche */
+    align-items: center; /* Centrer horizontalement le contenu */
 }
 
 .final-section h2 {
@@ -143,10 +143,11 @@ body {
     margin-top: 0; /* Supprime l'espacement supérieur pour le paragraphe */
 }
 
+/* Centrage de l'image */
 .image-item.centered {
-    grid-column: span 12; /* Pour s'assurer qu'elle prend toute la largeur */
-    display: flex; /* Utilisation de flex pour centrer le contenu */
-    justify-content: center; /* Centre le contenu */
+    display: flex; /* Utilisation de flex pour centrer l'image */
+    justify-content: center; /* Centre l'image horizontalement */
+    width: 100%; /* Prendre toute la largeur */
 }
 
 .image-item.centered img {
