@@ -34,8 +34,9 @@ body {
 /* Header */
 .header {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column; /* Change to column to stack elements */
+    justify-content: flex-start; /* Align content at the top */
+    align-items: flex-start; /* Align content to the left */
     padding-top: 20px;
 }
 
@@ -55,11 +56,11 @@ body {
     font-size: 1.1em;
 }
 
-/* Lien Instagram légèrement décalé à droite */
+/* Instagram link aligned under paragraph */
 .instagram-link {
-
-    padding-left: 5px; /* Ajout d'un peu d'espace à gauche si nécessaire */
-    margin-top: 5px; /* Pour aligner verticalement avec le texte */
+    padding-left: 0; /* No left padding needed */
+    margin-top: 5px; /* Add slight margin above */
+    align-self: flex-start; /* Align the link to the left */
 }
 
 .instagram-link a {
@@ -83,14 +84,14 @@ body {
     margin-bottom: 10px;
     text-transform: capitalize;
     color: #333;
-    width: 30%; /* Envelopper le titre dans une largeur de 30% */
+    width: 30%; /* Wrap title within 30% width */
 }
 
 .wrapped-text {
     font-size: 1.1em;
     color: #333;
-    width: 30%; /* Envelopper le texte dans une largeur de 30% */
-    line-height: 1.4; /* Ajuster l'espacement des lignes */
+    width: 30%; /* Wrap text within 30% width */
+    line-height: 1.4; /* Adjust line spacing */
 }
 
 /* Image Grid */
@@ -121,40 +122,38 @@ body {
 
 /* Final Section */
 .final-section {
-    text-align: left; /* Aligner le texte à gauche */
+    text-align: left; /* Align text to the left */
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Aligner tous les éléments à gauche */
+    align-items: flex-start; /* Align all elements to the left */
 }
 
 .final-section h2 {
     font-family: 'Mulish', sans-serif;
-    font-size: 2em; /* Même taille pour le texte */
+    font-size: 2em; /* Same size for the text */
     color: #333;
-    font-weight: 700; /* Mettre en gras */
-    margin-top: 0; /* Supprime l'espacement supérieur pour le titre */
+    font-weight: 700; /* Bold text */
+    margin-top: 0; /* Remove top spacing for the title */
 }
 
 .final-description {
-    font-family: 'Mulish', sans-serif; /* Assurer la même police */
-    font-size: 2em; /* Assurer que le texte soit de la même taille */
+    font-family: 'Mulish', sans-serif; /* Ensure same font */
+    font-size: 2em; /* Ensure text is the same size */
     color: #333;
-    font-weight: 700; /* Mettre en gras */
-    margin-top: 0; /* Supprime l'espacement supérieur pour le paragraphe */
+    font-weight: 700; /* Bold text */
+    margin-top: 0; /* Remove top spacing for the paragraph */
 }
 
-/* Centered Image with Smaller Size */
 .image-item.centered {
-    grid-column: span 12; /* Pour s'assurer qu'elle prend toute la largeur */
-    display: flex; /* Utilisation de flex pour centrer le contenu */
-    justify-content: center; /* Centre le contenu */
+    align-self: center; /* Center the image in the container */
+    margin-top: 20px; /* Add spacing above the image */
+    grid-column: span 12; /* Ensure it takes full width */
 }
 
-.small-image {
-    width: 60%; /* Réduit la taille de l'image à 60% du conteneur */
-    max-width: 400px; /* Contrôle la taille maximale pour éviter qu'elle soit trop grande */
-    height: auto; /* Laisse la hauteur s'ajuster */
+.final-section img {
+    max-width: 100%; /* Ensure image does not exceed container */
+    height: auto; /* Maintain aspect ratio */
 }
 
 /* Footer */
@@ -189,6 +188,6 @@ body {
     }
 
     .instagram-link {
-        margin-left: 0; /* Retire le décalage pour les petits écrans */
+        margin-left: 0; /* Remove offset for small screens */
     }
 }
