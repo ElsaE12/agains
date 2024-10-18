@@ -57,9 +57,9 @@ body {
 
 /* Lien Instagram légèrement décalé à droite */
 .instagram-link {
-    align-self: flex-start; /* Aligne le lien au sommet */
-    margin-left: 15px; /* Ajustement pour décaler légèrement à droite */
-    margin-top: 0; /* Pour aligner verticalement avec le texte */
+
+    padding-left: 5px; /* Ajout d'un peu d'espace à gauche si nécessaire */
+    margin-top: 5px; /* Pour aligner verticalement avec le texte */
 }
 
 .instagram-link a {
@@ -146,8 +146,9 @@ body {
 
 /* Centered Image with Smaller Size */
 .image-item.centered {
-    text-align: center; /* Center the image */
-    margin-top: 20px; /* Optional: add some spacing above the image */
+    grid-column: span 12; /* Pour s'assurer qu'elle prend toute la largeur */
+    display: flex; /* Utilisation de flex pour centrer le contenu */
+    justify-content: center; /* Centre le contenu */
 }
 
 .small-image {
