@@ -92,6 +92,20 @@ body {
     line-height: 1.4; /* Ajuster l'espacement des lignes */
 }
 
+/* Activities Text Style */
+.activities-text {
+    grid-column: span 12; /* Prendre toute la largeur de la grille */
+    text-align: left; /* Aligner le texte à gauche */
+    margin-top: 20px; /* Espacement au-dessus du texte */
+    padding-left: 20px; /* Ajouter un padding à gauche si nécessaire */
+}
+
+.activities-text p {
+    font-size: 1.2em; /* Ajuster la taille de la police */
+    color: #333; /* Couleur du texte */
+    margin: 0; /* Supprimer les marges par défaut */
+}
+
 /* Image Grid */
 .image-grid {
     display: flex;
@@ -124,25 +138,10 @@ body {
     margin-top: 30px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrer horizontalement le contenu */
+    align-items: center; /* Centre tous les éléments horizontalement */
 }
 
-.final-section h2 {
-    font-family: 'Mulish', sans-serif;
-    font-size: 2em; /* Même taille pour le texte */
-    color: #333;
-    font-weight: 700; /* Mettre en gras */
-    margin-top: 0; /* Supprime l'espacement supérieur pour le titre */
-}
-
-.final-description {
-    font-family: 'Mulish', sans-serif; /* Assurer la même police */
-    font-size: 2em; /* Assurer que le texte soit de la même taille */
-    color: #333;
-    font-weight: 700; /* Mettre en gras */
-    margin-top: 0; /* Supprime l'espacement supérieur pour le paragraphe */
-}
-
+/* Centrage de l'image */
 .image-item.centered {
     grid-column: span 12; /* L'image prend toute la largeur de la grille */
     display: flex; /* Utilisation de flex pour centrer l'image */
@@ -152,7 +151,8 @@ body {
 .image-item.centered img {
     max-width: 100%; /* S'assurer que l'image ne dépasse pas son conteneur */
     height: auto; /* Pour garder le ratio de l'image */
-    
+}
+
 /* Footer */
 .footer {
     grid-column: span 12;
