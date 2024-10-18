@@ -143,18 +143,16 @@ body {
     margin-top: 0; /* Supprime l'espacement supérieur pour le paragraphe */
 }
 
-/* Centrage de l'image */
 .image-item.centered {
+    grid-column: span 12; /* L'image prend toute la largeur de la grille */
     display: flex; /* Utilisation de flex pour centrer l'image */
     justify-content: center; /* Centre l'image horizontalement */
-    width: 100%; /* Prendre toute la largeur */
 }
 
 .image-item.centered img {
     max-width: 100%; /* S'assurer que l'image ne dépasse pas son conteneur */
     height: auto; /* Pour garder le ratio de l'image */
-}
-
+    
 /* Footer */
 .footer {
     grid-column: span 12;
